@@ -1,7 +1,7 @@
 # Module 6: Introduction to Functions
 
 ## Overview
-In this module, we'll explore three different approaches to using more advanced capabilities in R. After considering a function in an abstract sense, we'll dive into using built-in R functions, loading R packages, and writing our own functions. Note, you may need to learn a bit about vectors from [module-7](https://github.com/INFO-201/m7-vectors) to understand some of the functions described below. 
+In this module, we'll explore three different approaches to using more advanced capabilities in R. After considering a function in an abstract sense, we'll dive into using built-in R functions, loading R packages, and writing our own functions. Note, you may need to learn a bit about vectors from [module-7](https://github.com/INFO-201/m7-vectors) to understand some of the functions described below.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -18,8 +18,8 @@ In this module, we'll explore three different approaches to using more advanced 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Resources
-- [Function Cheatsheet](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
-
+- [R Function Cheatsheet](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
+- [User Defined R Functions](http://www.statmethods.net/management/userfunctions.html)
 
 ## What are functions?
 In a broad sense, a **function** is a task that you may want to perform one or more times throughout a program. They provide a way of encapsulating multiple instructions into an aggregate capability that is useful in a variety of different contexts. Depending on the function (and the programming language), functions may have a varying number of **inputs** and **outputs**.
@@ -67,21 +67,27 @@ Similarly to creating any other variable, you use the assignment operator (`<-`)
 ```r
 # Write a function to add two numbers together
 AddNumbers <- function(a, b) {
-  # Perform tasks in here
+  # Function body: perform tasks in here
   answer <- a + b
+
+  # Return statement: what you want the function to output
   return (answer)
 }
 
 # Execute your AddNumbers function with the values 2 and 6
-AddNumbers(2,6)  # 8
+AddNumbers(3,6)  # 9
 ```
-When you're defining a function, you specify the **arguments** that the function will accept within a the first set of parentheses (in the case, `a` and `b`). Note, we could have called `a` and `b` by any names we wanted: the important point is that those are the values that are used throughout the internal body of the function.
+Let's use the function as an example to better understand function anatomy:
 
-Within your curly braces (`{  }`) you write out all of the tasks your function will perform. Within this section, your arguments (`a` and `b`), will assume the values passed into the function upon execution.
+>**Arguments**: The values that are put into a function are referred to as **arguments** or **parameters**. When you define a function, you specify the **arguments** that the function accepts within the first set of parentheses (in the case, `a` and `b`). Note, we could have called `a` and `b` by any names we wanted. The important point is that those are the values that are used throughout the internal body of the function.
 
-Finally, your function **returns** (outputs) a single value, which you should put in parentheses after the word `return`.
+>**Body**: The body of the function is the block of code that falls between the curly braces (`{  }`). The function body specifies all tasks that your function will perform. Within this section, your arguments (`a` and `b`), will assume the values passed into the function upon execution.
 
-To execute the function, we simply passed in two parameters: `2` and `6`. When the function executes, it runs each line in the body of the function, but replaces the function arguments (`a` and `b`) with the values that were put into the function (`2` and `6`).
+> **Return value**: The last line of your **function body** is your **return value**. In R, functions returns a single value, which you should put in parentheses after the word `return`.
+
+To execute the function, we simply passed in two **arguments**: `3` and `6`. R then executes each line in the **function body**, replacing the **arguments** (`a` and `b`) with the values that were put into the function (`3` and `6`). Finally, R will output the **return value** at the end of the function.
+
+For practice writing basic functions, see [exercise-1](exercise-1).
 
 ## Conditional Statements
 In R, as in other programming languages, you often want to take different actions given a set of conditions. Conditional statements allow us to isolate chunks of code to execution given different contexts, which is often valuable within functions. In an abstract sense, an conditional statement is saying:
@@ -104,3 +110,4 @@ if(SOMETHING IS TRUE) {
   # BY DEFAULT, DO EVERYTHING IN HERE
 }
 ```
+For practice writing conditional statements in functions, see [exercise-2](exercise-2). Note, you'll need to be familiar with some of the concepts from [module-7](https://github.com/INFO-201/m7-vectors).
