@@ -1,7 +1,7 @@
 # Module 6: Introduction to Functions
 
 ## Overview
-In this module, we'll explore three different approaches to using more advanced capabilities in R. After considering a function in an abstract sense, we'll dive into using built-in R functions, loading R packages, and writing our own functions.
+In this module, we'll explore three different approaches to using more advanced capabilities in R. After considering a function in an abstract sense, we'll dive into using built-in R functions, loading R packages, and writing our own functions. Note, you may need to learn a bit about vectors from [module-7](https://github.com/INFO-201/m7-vectors) to understand some of the functions described below. 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
