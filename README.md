@@ -1,23 +1,9 @@
-# Module 6: Introduction to Functions
+# Introduction to Functions
 
-## Overview
 In this module, we'll explore three different approaches to using more advanced capabilities in R. After considering a function in an abstract sense, we'll dive into using built-in R functions, loading R packages, and writing our own functions. Note, you may need to learn a bit about vectors from [module-7](https://github.com/INFO-201/m7-vectors) to understand some of the functions described below.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+Helpful links:
 
-**Contents**
-
-- [Resources](#resources)
-- [What are functions?](#what-are-functions)
-- [Built-in R Functions](#built-in-r-functions)
-- [Loading Functions](#loading-functions)
-- [Writing functions](#writing-functions)
-- [Conditional Statements](#conditional-statements)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Resources
 - [R Function Cheatsheet](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
 - [User Defined R Functions](http://www.statmethods.net/management/userfunctions.html)
 
