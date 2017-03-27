@@ -1,23 +1,9 @@
-# Module 6: Introduction to Functions
+# Introduction to Functions
 
-## Overview
 In this module, we'll explore three different approaches to using more advanced capabilities in R. After considering a function in an abstract sense, we'll dive into using built-in R functions, loading R packages, and writing our own functions. Note, you may need to learn a bit about vectors from [module-7](https://github.com/INFO-201/m7-vectors) to understand some of the functions described below.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+Helpful links:
 
-**Contents**
-
-- [Resources](#resources)
-- [What are functions?](#what-are-functions)
-- [Built-in R Functions](#built-in-r-functions)
-- [Loading Functions](#loading-functions)
-- [Writing functions](#writing-functions)
-- [Conditional Statements](#conditional-statements)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-## Resources
 - [R Function Cheatsheet](https://cran.r-project.org/doc/contrib/Short-refcard.pdf)
 - [User Defined R Functions](http://www.statmethods.net/management/userfunctions.html)
 
@@ -87,7 +73,7 @@ Let's use the function as an example to better understand function anatomy:
 
 To execute the function, we simply passed in two **arguments**: `3` and `6`. R then executes each line in the **function body**, replacing the **arguments** (`a` and `b`) with the values that were put into the function (`3` and `6`). Finally, R will output the **return value** at the end of the function.
 
-For practice writing basic functions, see [exercise-1](exercise-1).
+For practice writing basic functions, see [exercise-1](http://github.com/info201-s17/m7-functions/tree/master/exercise-1).
 
 ## Conditional Statements
 In R, as in other programming languages, you often want to take different actions given a set of conditions. Conditional statements allow us to isolate chunks of code to execution given different contexts, which is often valuable within functions. In an abstract sense, an conditional statement is saying:
@@ -110,4 +96,4 @@ if(SOMETHING IS TRUE) {
   # BY DEFAULT, DO EVERYTHING IN HERE
 }
 ```
-For practice writing conditional statements in functions, see [exercise-2](exercise-2). Note, you'll need to be familiar with some of the concepts from [module-7](https://github.com/INFO-201/m7-vectors).
+For practice writing conditional statements in functions, see [exercise-2](http://github.com/info201-s17/m7-functions/tree/master/exercise-2). Note, you'll need to be familiar with some of the concepts from [module-7](https://github.com/INFO-201/m7-vectors).
