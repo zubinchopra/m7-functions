@@ -73,7 +73,7 @@ Let's use the function as an example to better understand function anatomy:
 
 To execute the function, we simply passed in two **arguments**: `3` and `6`. R then executes each line in the **function body**, replacing the **arguments** (`a` and `b`) with the values that were put into the function (`3` and `6`). Finally, R will output the **return value** at the end of the function.
 
-For practice writing basic functions, see [exercise-1](exercise-1).
+For practice writing basic functions, see [exercise-1](http://github.com/info201-s17/m7-functions/tree/master/exercise-1).
 
 ## Conditional Statements
 In R, as in other programming languages, you often want to take different actions given a set of conditions. Conditional statements allow us to isolate chunks of code to execution given different contexts, which is often valuable within functions. In an abstract sense, an conditional statement is saying:
@@ -96,4 +96,4 @@ if(SOMETHING IS TRUE) {
   # BY DEFAULT, DO EVERYTHING IN HERE
 }
 ```
-For practice writing conditional statements in functions, see [exercise-2](exercise-2). Note, you'll need to be familiar with some of the concepts from [module-7](https://github.com/INFO-201/m7-vectors).
+For practice writing conditional statements in functions, see [exercise-2](http://github.com/info201-s17/m7-functions/tree/master/exercise-2). Note, you'll need to be familiar with some of the concepts from [module-7](https://github.com/INFO-201/m7-vectors).
